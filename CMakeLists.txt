@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( haze )
+find_package( OpenCV REQUIRED )
+add_executable( haze haze.cpp )
+target_link_libraries( haze ${OpenCV_LIBS} )
